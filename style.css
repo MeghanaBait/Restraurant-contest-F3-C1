@@ -264,7 +264,7 @@ main {
      }
  
      .hero {
-         display: none;
+         /* display: none; */
      }
  
      .header-btn{
