@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    background: #0C0E10;
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    gap: 1rem;
+    height: 100vh;
+    padding: 10px
+}
+
+aside,
+main {
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 1rem;
+    box-sizing: border-box; 
+}
+
+aside img {
+    width: 298px;
+    height: 298px;
+    flex-shrink: 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+aside h2 {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.heading {
+    margin-bottom: 0.5rem;
+}
+
+h4 {
+    color: #FF2424;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.links {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #1C2025;
+}
+
+li::marker {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.link a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+
+/* main section */
+main {
+    background: #111315;
+}
+
+.main-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1.5rem;
+}
+
+.header {
+    display: flex;
+    height: 83px;
+    background: #191D20;
+    gap: 1rem;
+    padding: 0.5rem 1.5rem;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+}
+
+.search-bar {
+    flex: 1;
+    background: #272A30;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding-inline: 0.5rem;
+}
+
+.search-bar input {
+    flex: 1;
+    border: 0;
+    outline: 0;
+    height: 46px;
+
+    background-color: transparent;
+    padding-inline: 1rem;
+}
+
+.search-bar img {
+    width: 24px;
+    height: 24px;
+}
+
+.btn {
+    padding-inline: 2rem;
+    border: 0;
+    outline: 0;
+    height: 46px;
+    background-color: #ff2424;
+    font-size: 16px;
+    color: #F5F5F5;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #F5F5F5;
+    color: #FF2424;
+    border: 1px solid #FF2424;
+}
+
+
+.user img {
+    width: 58px;
+    height: 58px;
+}
+
+
+.hero {
+    width: 1284px;
+    padding: 1rem;
+}
+
+
+
+.menu-items {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+.card {
+    border-radius: 10px;
+    background: #191D20;
+    padding: .5rem;
+    transition: all 0.4s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-details {
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-details-left p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+/* media queries */
+@media (max-width: 1400px) {
+
+    body {
+        grid-template-columns: 30% 70%;
+    }
+}
+
+@media (max-width: 1100px) {
+
+    body {
+        grid-template-columns: 40% 60%;
+    }
+}
+
+@media (max-width: 800px) {
+
+    body {
+        grid-template-columns: 100%;
+    }
+
+    aside {
+        align-items: center;
+    }
+}
