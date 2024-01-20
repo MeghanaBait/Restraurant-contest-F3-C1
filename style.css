@@ -170,8 +170,16 @@ main {
 
 
 .hero {
-    width: 100%;
-    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px;
+    margin-bottom: 20px;;
+}
+
+.hero img{
+    width: 80vw;
+    height: 300px;
 }
 
 .menu-items {
